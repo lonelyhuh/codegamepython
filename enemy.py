@@ -119,7 +119,7 @@ def main():
             lost_label = lost_font.render("MÀY NGU", 1, (0,0,0))
             WIN.blit(lost_label, (WIDTH/2 - lost_label.get_width()/2, 200))
             pygame.display.update()
-            if lost_count == FPS*3:
+            if lost_count > FPS*3:
                 run = false
             else:
                 continue
